@@ -1,8 +1,9 @@
 "use client";
 
-import { initialResolverContext } from "@/initial-context/initial-resolver-context";
-import { Resolver } from "@/types/resolver.types";
-import { setCookie } from "@/utils/cookie";
+import { initialResolverContext } from "../initial-context/initial-resolver-context";
+
+import { Resolver } from "../types/resolver.types";
+import { setCookie } from "../utils/cookie";
 import React from "react";
 
 export const ResolverContext = React.createContext<Resolver>(
