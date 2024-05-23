@@ -1,6 +1,5 @@
 "use client";
 
-import { favicon } from "@/constant/token.constants";
 import { initialResolverContext } from "@/initial-context/initial-resolver-context";
 import { Resolver } from "@/types/resolver.types";
 import { setCookie } from "@/utils/cookie";
@@ -39,7 +38,7 @@ const contextMapper = (data: Resolver) => {
   } = data;
 
   if (site_meta?.logo?.favicon) {
-    setCookie(favicon, site_meta.logo.favicon);
+    setCookie("favicon-icon", site_meta.logo.favicon);
   }
 
   return {
