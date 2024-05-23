@@ -1,7 +1,7 @@
 {
   "name": "resolver-package",
   "version": "0.1.0",
-  "private": true,
+  "main": "src/provider/ResolverProvider.tsx",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
